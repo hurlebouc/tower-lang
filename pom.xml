@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>fr.pointfixe</groupId>
-    <artifactId>simple-lang</artifactId>
+    <artifactId>tower-lang</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>simple-lang-syntax</module>
-        <module>simple-lang-type</module>
+        <module>tower-lang-syntax</module>
+        <module>tower-lang-type</module>
     </modules>
 
 
