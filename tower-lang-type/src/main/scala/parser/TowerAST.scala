@@ -37,10 +37,18 @@ case class App(a : Term, b : Term) extends Term {
     b.getType(environment, constants, rules)
   }
 }
-case class Abs(vars : Seq[TypedVar], t : Term) extends Term
-case class Pi(vars : Seq[TypedVar], t : Term) extends Term //forall utilise ça
-case class Let(defs : Seq[Definition], t : Term) extends Term
-case class Case(t : Term, pat : Seq[Pattern]) extends Term
+case class Abs(vars : Seq[TypedVar], t : Term) extends Term {
+  override def getType(environment: Environment, constants: Constants, rules: Rules): Either[String, Term] = ???
+}
+case class Pi(vars : Seq[TypedVar], t : Term) extends Term {
+  override def getType(environment: Environment, constants: Constants, rules: Rules): Either[String, Term] = ???
+} //forall utilise ça
+case class Let(defs : Seq[Definition], t : Term) extends Term {
+  override def getType(environment: Environment, constants: Constants, rules: Rules): Either[String, Term] = ???
+}
+case class Case(t : Term, pat : Seq[Pattern]) extends Term {
+  override def getType(environment: Environment, constants: Constants, rules: Rules): Either[String, Term] = ???
+}
 
 case class TypedVar(x : Var, typ : Term)
 case class TypedCons(x : Cons, typ : Term)

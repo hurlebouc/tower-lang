@@ -4,19 +4,10 @@
   <artifactId>tower-lang-type</artifactId>
   <version>1.0-SNAPSHOT</version>
   <name>${project.artifactId}</name>
-  <description>My wonderfull scala app</description>
-  <inceptionYear>2018</inceptionYear>
-  <licenses>
-    <license>
-      <name>My License</name>
-      <url>http://....</url>
-      <distribution>repo</distribution>
-    </license>
-  </licenses>
 
   <properties>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
     <encoding>UTF-8</encoding>
     <scala.version>2.12.6</scala.version>
     <scala.compat.version>2.12</scala.compat.version>
@@ -26,7 +17,7 @@
   <dependencies>
       <dependency>
           <groupId>fr.pointfixe</groupId>
-          <artifactId>tower-lang</artifactId>
+          <artifactId>tower-lang-syntax</artifactId>
           <version>1.0-SNAPSHOT</version>
       </dependency>
     <dependency>
